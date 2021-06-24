@@ -31,9 +31,9 @@ export default class Elevator {
 		const allowed = ["boards", "spread"]
 		this.config = { "boards": 4, "spread": 2 };
 		for (const key in this.params) {
-			if (key in allowed) {
-				this.config[key] = Number(this.params[key]);
-			}
+
+			this.config[key] = Number(this.params[key]);
+			
 		}
 
 		this.strings = new Array(this.config["boards"]);
