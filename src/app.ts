@@ -117,13 +117,13 @@ export default class Elevator {
 							transform: {
 								local: {
 									position: { x: posX, y: 1.5, z: 0 },
-									scale: { x: 0.4, y: 0.4, z: 0.4 }
+									scale: { x: 0.8, y: 0.8, z: 0.8 }
 								}
 							},
 							text: {
 								contents: this.strings[i],
 								anchor: MRE.TextAnchorLocation.MiddleCenter,
-								color: { r: 255 / 255, g: 255 / 255, b: 255 / 255 },
+								color: { r: 0 / 255, g: 0 / 255, b: 0 / 255 },
 								height: 0.3
 							}
 						}
@@ -140,7 +140,7 @@ export default class Elevator {
 							transform: {
 								local: {
 									position: { x: posX, y: 1.5, z: 0 },
-									scale: { x: this.strings[i].length * 0.2, y: 0.4, z: 0.2 }
+									scale: { x: this.strings[i].length * 0.4, y: 0.8, z: 0.8 }
 								}
 							},
 							appearance: {
