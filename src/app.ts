@@ -116,7 +116,7 @@ export default class Elevator {
 							name: 'Text',
 							transform: {
 								local: {
-									position: { x: posX, y: 1.5, z: 0 },
+									position: { x: posX, y: (i%2===0) ? 1.5 : 1.75, z: 0 },
 									scale: { x: 0.8, y: 0.8, z: 0.8 }
 								}
 							},
@@ -139,7 +139,7 @@ export default class Elevator {
 							name: 'Text',
 							transform: {
 								local: {
-									position: { x: posX, y: 1.5, z: 0 },
+									position: { x: posX, y: (i%2===0) ? 1.5 : 1.75, z: 0 },
 									scale: { x: this.strings[i].length * 0.4, y: 0.8, z: 0.1 }
 								}
 							},
