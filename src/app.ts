@@ -87,11 +87,11 @@ export default class Elevator {
 			paperBehavior.onClick(_ => {
 				_.prompt("Fill in the blank", true)
 					.then(res => {
-						console.log(res);
+						// console.log(res);
 
 						if (res.submitted) {
 							this.strings[i] = res.text;
-							console.log(this.strings);
+							// console.log(this.strings);
 							this.update_all(i);
 							this.create_Text();
 						}
@@ -106,6 +106,7 @@ export default class Elevator {
 
 	}
 	private create_Text() {
+
 		let posX = 1;
 		for (let i = 0; i < this.config["boards"]; i++) {
 			if (this.strings[i] !== undefined) {
@@ -163,19 +164,27 @@ export default class Elevator {
 			for (let i = 0; i < this.config["boards"]; i++) {
 				if (this.text[i] !== undefined) {
 					this.text[i].destroy();
+					this.text[i]= undefined;
 				}
 				if (this.box[i] !== undefined) {
 					this.box[i].destroy();
+					this.box[i]= undefined;
 				}
+				this.strings[i]= undefined;
 			}
 		}
 		else {
 			if (this.text[obj] !== undefined) {
 				this.text[obj].destroy();
+				this.text[obj]= undefined;
 			}
 			if (this.box[obj] !== undefined) {
 				this.box[obj].destroy();
+				this.box[obj]= undefined;
 			}
+			// console.log(this.text);
+			// console.log(this.box);
+			
 		}
 	}
 }
