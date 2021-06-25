@@ -66,7 +66,7 @@ export default class Elevator {
 			this.update_all(-1);
 		});
 
-		const papermodel = await this.assets.loadGltf('paper.glb', "box");
+		const papermodel = await this.assets.loadGltf('Paper.glb', "box");
 		let posX = 1;
 		for (let i = 0; i < this.config["boards"]; i++) {
 			const paper = MRE.Actor.CreateFromPrefab(this.context, {
