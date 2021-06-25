@@ -155,8 +155,9 @@ export default class Elevator {
 						this.box[i].appearance.enabled = false;
 					});
 				}
-				posX += this.config["spread"];
+				
 			}
+			posX += this.config["spread"];
 		}
 	}
 	private update_all(obj = -1) {
