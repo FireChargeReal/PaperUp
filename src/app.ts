@@ -140,7 +140,7 @@ export default class Elevator {
 							transform: {
 								local: {
 									position: { x: posX, y: 1.5, z: 0 },
-									scale: { x: this.strings[i].length * 0.4, y: 0.8, z: 0.8 }
+									scale: { x: this.strings[i].length * 0.4, y: 0.8, z: 0.1 }
 								}
 							},
 							appearance: {
