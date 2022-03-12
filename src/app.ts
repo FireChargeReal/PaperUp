@@ -69,9 +69,9 @@ export default class Elevator {
 		const papermodel = await this.assets.loadGltf('Paper.glb', "box");
 		let posX = 1;
 		for (let i = 0; i < this.config["boards"]; i++) {
-			const paper = MRE.Actor.CreateFromPrefab(this.context, {
+			const paper = MRE.Actor.CreateFromLibrary(this.context, {
 				// using the data we loaded earlier
-				firstPrefabFrom: papermodel,
+				resourceId:"artifact:1956000528831873200",
 				// Also apply the following generic actor properties.
 				actor: {
 					name: 'down button',
